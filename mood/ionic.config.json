@@ -1,0 +1,7 @@
+{
+  "name": "mood",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
