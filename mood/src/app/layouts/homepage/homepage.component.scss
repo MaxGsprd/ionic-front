@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-custom {
+    margin-top: 20px;
+}
+
+.welcome-title {
+    color: #3C5099;
+    margin-left: 30px   ;
+}
+
+.establishment-card {
+    // background-color: bisque;
+    margin: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: rotateX(-10deg);
+        }
+        to {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color='danger'>
+    <ion-title>Lunchlady</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container-custom">
+
+    <h1 class="welcome-title">Envie de de sortir ?</h1>
+    
+    <section class="establishment-card" *ngFor="let establishment of establishments">
+      <app-establishment-card  [establishment]="establishment"></app-establishment-card>
+    </section>
+    
+  </div>
+
+</ion-content>

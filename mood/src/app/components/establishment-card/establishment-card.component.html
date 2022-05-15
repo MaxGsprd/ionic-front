@@ -1,0 +1,49 @@
+<!-- <ion-content>
+  <ion-card class="establishment-card">
+    <img src="../../../assets/images/default_establishment_image.jpg" alt="default_establishment_image">
+    
+    <div class="card-content">
+      <ion-card-header >
+        <ion-card-title>{{establishment?.name}}</ion-card-title>
+      </ion-card-header>
+  
+      
+    </div>
+  </ion-card>
+</ion-content> -->
+
+<div class="card-container-custom"> 
+  <!-- <section class="grid-item card-img-custom" [ngStyle]="{'background-image': establishmentImgUrl}"></section> -->
+  <img class="card-img-custom" src="../../../assets/images/default_establishment_image.jpg" alt="default_establishment_image">
+  <section class="grid-item card-content-custom">
+    <div class="card-title-custom">
+      <h2>{{ establishment.name }}</h2>
+    </div>
+    <div class="card-description-custom">
+      <p>
+        <small>{{ shortDescription }}</small>
+      </p>
+    </div>
+    <div class="card-footer-custom">
+        <div class="mood-note-container">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <div [ngClass]="{'beer-outer': moodId == '1', 'party-outer': moodId == '2', 'chill-outer': moodId == '3'}">
+                      <div [ngStyle]="{'width':noteInnerWidth+'%'}" [ngClass]="{'beer-inner': moodId == '1', 'party-inner': moodId == '2', 'chill-inner': moodId == '3'}"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="card-comment-custom">
+        <p><small>
+          ({{ commentCount}} avis)
+        </small></p>
+      </div>
+    </div>
+  </section>
+</div>
+  
