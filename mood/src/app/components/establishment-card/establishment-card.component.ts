@@ -48,6 +48,7 @@ export class EstablishmentCardComponent implements OnInit {
       } else {
         this.shortDescription = this.establishment.description.toString();
       }
+      console.log(this.shortDescription)
     }
   }
 }

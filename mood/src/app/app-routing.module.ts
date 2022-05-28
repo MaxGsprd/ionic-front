@@ -16,10 +16,10 @@ const routes: Routes = [
     path: 'home',
     component: HomepageComponent
   },
-  // {
-  //   path: 'auth',
-  //   loadChildren: () => import('./layouts/auth/auth.module').then(m => m.AuthModule)
-  // },
+  {
+    path: 'auth',
+    loadChildren: () => import('./layouts/auth/auth.module').then(m => m.AuthModule)
+  },
   // {
   //   path: 'establishment',
   //   loadChildren: () => import('./layouts/establishment/establishment.module').then(m => m.EstablishmentModule)

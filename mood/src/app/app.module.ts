@@ -14,7 +14,7 @@ import { EstablishmentCardComponent } from './components/establishment-card/esta
   declarations: [
     AppComponent, 
     HomepageComponent,
-    EstablishmentCardComponent
+    EstablishmentCardComponent,
   ],
   entryComponents: [],
   imports: [

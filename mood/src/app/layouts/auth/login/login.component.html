@@ -1,0 +1,26 @@
+
+<h2>CONNEXION</h2>
+
+<form id="loginForm" [formGroup]="loginForm">
+  <ion-list>
+    <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input class="form-control" type="text" name="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input class="form-control" type="text" name="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+      <ion-button id="forgotPassword">Mot de passe oublié ?</ion-button>
+      <ion-button id="loginButton" (click)="login()">Se connecter</ion-button>
+
+  
+  
+</form>
+
+<div id="signin">
+  <p id="notAMember">Pas encore membre ?</p>
+  <p><a routerLink="/auth/signin" >Inscrivez-vous</a>, pour profiter de toutes les fonctionnalités !</p>
+</div>
+
